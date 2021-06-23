@@ -1,0 +1,159 @@
+body{
+  background: #FFFFFF;
+}
+.info{
+  text-align: center;
+  margin-top: 100px;
+  
+  
+}
+
+.avatar{
+  
+  width: 450px;
+  height: 450px;
+  border-radius: 100%;
+  border: 15px dashed #82FFF0;
+  
+  position: relative;
+  top: -650px;
+  
+}
+.box{
+  width: 900px;
+  height: 900px;
+  background-size: transparent;
+  box-shadow: 0px 0px 40px 10px #ccc;
+  border-radius: 40px;
+  margin: 0 auto;
+  position: relative;
+  top: 500px;
+  z-index: -1;
+  
+  
+  
+}
+.name{
+  position: relative;
+  top: -650px;
+  font-size: 50px;
+  
+}
+.gioi_thieu{
+  padding-bottom: 200px;
+  padding-left: 150px;
+  padding-right: 150px;
+  text-align: center;
+  position: relative;
+  top: -650px;
+  font-size: 40px;
+  background-color: transparent;
+}
+
+
+.call{
+  display: inline-block;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  padding: 20px 290px 20px 30px;
+  background: #44FF54;
+  position: relative;
+  top: -650px;
+  right: 20px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 40px 5px #ccc;
+}
+.save_icon{
+  display: inline-block;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  padding: 20px 290px 30px 50px;
+  background: #00FFFB;
+  border-radius: 100px;
+  position: relative;
+  top: -650px;
+  left: 20px;
+  box-shadow: 0px 0px 40px 5px #ccc;
+  
+}
+.bars{
+  
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  
+}
+.nav_mobile{
+  
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 700px;
+  background: #fff;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.nav_list{
+  margin-top: 120px;
+  margin-left: 150px;
+  position: relative;
+  top: 200px;
+  
+
+}
+.nav_link{
+  
+  font-size: 50px;
+  text-decoration: none;
+  color: #000000;
+  background-color: transparent;
+  
+  padding: 40px 150px 40px 0px;
+  
+  
+}
+.input_checkbox{
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+}
+.input_checkbox:checked ~ .overlay{
+  display: block
+  
+}
+@keyframes fadein{
+  from{
+    opacity: 0;
+    
+  }
+  to{
+    opacity: 1;
+  }
+}
+.input_checkbox:checked ~ .nav_mobile{
+  transform: translateX(0);
+  opacity: 1;
+
+}
+
+.input_checkbox:checked ~ .info{
+  background: #000000;
+}
